@@ -41,8 +41,14 @@
                 </P>
                 <button>Sign up</button>
             </div>
-            <img src="Images/bannerimage.jpg" alt="main-banner">
-        </div>
+            <div class="banner-image">
+                <img srcset="Images/bannerimage/bannerimage-320x.jpg 320w,
+                         Images/bannerimage/bannerimage-640x.jpg 640w,"
+                 sizes="(max-width: 320px) 320px,
+                        (max-width: 640px) 640px,"
+                 src="Images/bannerimage/bannerimage.jpg"
+                 alt="main-banner">
+            </div>
 
         <div class="location-reseach">
             <form >
@@ -55,7 +61,7 @@
                     <input type="text" placeholder="Type">
                 </div>
                 <div class="price">
-                    <span class="fa-solid fa-house"></span>
+                    <span class="fa-solid fa-circle-dollar-to-slot"></span>
                     <input type="text" placeholder="Price Range">
                 </div>
                 
@@ -64,12 +70,17 @@
         </div>
     </section>
 
-    <!-- main section -->
+    <!-- add main section -->
      <main>
-        <!-- we help you to find your dream home -->
+        <!-- add the hero-section -->
          <section class="hero-section">
                 <div class="image-container">
-                    <img src="Images/luxuryandrichhome.jpg" alt="Luxury-and-rich-home">
+                    <img srcset="Images/luxuryandrichhome/luxuryandrichhome-320x.jpg 320w,
+                                 Images/luxuryandrichhome/luxuryandrichhome-640x.jpg 640w,"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 640px) 640px,"
+                         src="Images/luxuryandrichhome/luxuryandrichhome.jpg"
+                         alt="Luxury-and-rich-home">
                 </div>
                 <div class="content">
                     <h2>We Help You To Find Your Dream Home</h2>
@@ -91,7 +102,7 @@
                 </div>
         </section>
 
-        <!-- Why Choose Us -->
+        <!-- add the why-choose-us section -->
         <section class="why-choose-us">
                 <div class="section-header">
                     <h2>Why Choose Us</h2>
@@ -100,22 +111,26 @@
 
                 <div class="section-container">
                     <div class="service-box">
-                        <h3><i class="fa-solid fa-location-dot"></i>Expert Guidance</h3>
+                        <span class="fa-solid fa-location-dot"></span>
+                        <h3>Expert Guidance</h3>
                         <p>Benefit from our team's seasoned expertise for a smooth buying Experience</p>
                     </div>
     
                     <div class="service-box">
-                        <h3><i class="fa-solid fa-user-pen"></i>Personalized Service</h3>
-                        <p>OUr service adapt to your unique needs, making your journey stress-free</p>
+                        <span class="fa-solid fa-user-pen"></span>
+                        <h3>Personalized Service</h3>
+                        <p>Our service adapt to your unique needs, making your journey stress-free</p>
                     </div>
     
                     <div class="service-box"> 
-                        <h3><i class="fa-solid fa-clipboard-list"></i>Transparent Process</h3>
+                        <span class="fa-solid fa-clipboard-list"></span>
+                        <h3>Transparent Process</h3>
                         <p>Stay informed with our clear and honest approach to buying your home</p>
                     </div>
     
                     <div class="service-box">
-                        <h3><i class="fa-solid fa-handshake-simple"></i>Exceptional Support</h3>
+                        <span class="fa-solid fa-handshake-simple"></span>
+                        <h3>Exceptional Support</h3>
                         <p>Providing peace of mind with our responsive and attentive customer service</p>
                     </div>
                 </div>
@@ -130,7 +145,12 @@
                 <!-- residence-card 1 -->
                 <div class="residence-card">
                     <figure>
-                        <img src="Images/house-1.jpg" alt="San Francisco">
+                        <img srcset="Images/house-1/house-1-320x.jpg 320w,
+                                     Images/house-1/house-1-640x.jpg 640w,"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 640px) 640px,"
+                             src="Images/house-1/house-1.jpg" 
+                             alt="San Francisco">
                     </figure>
 
                     <div class="residence-info">
@@ -140,15 +160,20 @@
                                 <p><i class="fa-thin fa-tape"></i>3,500 sq ft</p>
                         </div>
                         <div class="residence-action">
-                            <button>Sign up</button>
                             <p>$2,500,000</p>
+                            <button>Sign up</button>
                          </div>
                     </div>
                 </div>
                  <!-- residence-card 2 -->
                 <div class="residence-card">
                     <figure>
-                    <img src="Images/house-2.jpg" alt="Beverly Hills">
+                    <img srcset="Images/house-2/house-2-320x.jpg 320w,
+                                 Images/house-2/house-2-640x.jpg 640w,"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 640px) 640px,"
+                         src="Images/house-3/house-2.jpg"  
+                         alt="Beverly Hills">
                     </figure>
 
                     <div class="residence-info">
@@ -158,8 +183,8 @@
                                 <p><i class="fa-thin fa-tape"></i>1,500 sq ft</p>
                         </div>
                         <div class="residence-action">
-                            <button>Sign up</button>
                             <p>$850,000</p>
+                            <button>Sign up</button>
                          </div>
                     </div>
                 </div>
@@ -167,7 +192,12 @@
                  <!-- residence-card 3 -->
                 <div class="residence-card">
                     <figure>
-                    <img src="Images/house-3.jpg" alt="Palo Alto">
+                    <img srcset="Images/house-3/house-3-320x.jpg 320w,
+                                 Images/house-3/house-3-640x.jpg 640w,"
+                         sizes="(max-width: 320px) 320px,
+                                (max-width: 640px) 640px,"
+                         src="Images/house-3/house-3.jpg"  
+                         alt="Palo Alto">
                     </figure>
 
                     <div class="residence-info">
@@ -177,9 +207,9 @@
                                 <p><i class="fa-thin fa-tape"></i>4,000 sq ft</p>
                         </div>
                         <div class="residence-action">
-                            <button>Sign up</button>
                             <p>$3,700,000</p>
-                         </div>
+                            <button>Sign up</button>
+                        </div>
                     </div>
                 </div>    
             </div>
@@ -192,7 +222,12 @@
                 <div class="feedback-container">
                     <!-- What Sarah Ngugen Says-->
                     <div class="feedabck-card">
-                        <img src="Images/room-1.jpg" alt="Sarah Ngugen">
+                        <img srcset="Images/room-1/room-1-320x.jpg 320w,
+                                     Images/room-1/room-1-640x.jpg 640w,"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 640px) 640px,"
+                             src="Images/room-1/room-1.jpg"  
+                             alt="Sarah Ngugen">
                         <div class="profile">
                             <img src="Images/SarahNgugen.jpg" alt="Sarah Ngugen">
                             <div>
@@ -207,7 +242,12 @@
 
                     <!-- What Michael Rodriguez Says-->
                     <div class="feedabck-card">
-                        <img src="Images/room-2.jpg" alt="Michael">
+                        <img src=srcset="Images/room-2/room-2-320x.jpg 320w,
+                                     Images/room-2/room-2-640x.jpg 640w,"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 640px) 640px,"
+                             src="Images/room-2/room-2.jpg" 
+                             alt="Michael">
                         <div class="profile">
                             <img src="Images/Michael.jpg" alt="Michael Rodriguez">
                             <div>
@@ -221,7 +261,12 @@
 
                     <!-- What Emily Johnson Says-->
                     <div class="feedabck-card">
-                        <img src="Images/room-3.jpg" alt="Emily">
+                        <img srcset="Images/room-3/room-3-320x.jpg 320w,
+                                     Images/room-3/room-3-640x.jpg 640w,"
+                             sizes="(max-width: 320px) 320px,
+                                    (max-width: 640px) 640px,"
+                             src="Images/room-3/room-3.jpg" 
+                             alt="Emily">
                         <div class="profile">
                             <img src="Images/Emily.jpg" alt="Emily Johnson">
                             <div>
