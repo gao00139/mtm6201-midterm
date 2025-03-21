@@ -8,18 +8,20 @@
     <link rel="stylesheet" href="CSS/main.css">
 </head>
 <body>
-    <header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <!-- add the header -->
+    <header role="banner">
         <!-- add a navigation -->
-        <nav>
+        <nav role="navigation">
             <div class="logo">
                 <a href="#" class="logo"><img src="Images/logo.jpg" alt="logo"></a>
             </div>
             <div class="nav">
                 <ul>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="#home" aria-current="page">Home</a></li>
                     <li><a href="#services">Service</a></li>
-                    <li><a href="#agents">Agents</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <div class="signup">
@@ -31,47 +33,47 @@
         </nav>
     </header>
 
-     <!-- add a Banner -->
-    <section class="banner">
-        <div class="banner-info">
-            <div class="find-your-dream-home">
-                <h1>Find Your Dream Home</h1>
-                <P>
-                    Explore our curated selection of exquisite properties meticulously tailored to your uinque dream home cision
-                </P>
-                <button>Sign up</button>
+     <!-- add main section -->
+    <main id="main-content" role="main">
+        <!-- add a Banner -->
+        <section class="banner">
+            <div class="banner-info">
+                <div class="find-your-dream-home">
+                    <h1>Find Your Dream Home</h1>
+                    <P>
+                        Explore our curated selection of exquisite properties meticulously tailored to your uinque dream home cision
+                    </P>
+                    <button>Sign up</button>
+                </div>
+                <div class="banner-image">
+                    <img srcset="Images/bannerimage/bannerimage-320x.jpg 320w,
+                            Images/bannerimage/bannerimage-640x.jpg 640w,"
+                    sizes="(max-width: 320px) 320px,
+                            (max-width: 640px) 640px,"
+                    src="Images/bannerimage/bannerimage.jpg"
+                    alt="main-banner">
+                </div>
             </div>
-            <div class="banner-image">
-                <img srcset="Images/bannerimage/bannerimage-320x.jpg 320w,
-                         Images/bannerimage/bannerimage-640x.jpg 640w,"
-                 sizes="(max-width: 320px) 320px,
-                        (max-width: 640px) 640px,"
-                 src="Images/bannerimage/bannerimage.jpg"
-                 alt="main-banner">
+            <div class="location-reseach">
+                <form >
+                    <div class="location">
+                        <span class="fa-solid fa-location-dot"></span>
+                        <input type="text" placeholder="Location">
+                    </div>
+                    <div class="type">
+                        <span class="fa-solid fa-house"></span>
+                        <input type="text" placeholder="Type">
+                    </div>
+                    <div class="price">
+                        <span class="fa-solid fa-circle-dollar-to-slot"></span>
+                        <input type="text" placeholder="Price Range">
+                    </div>
+                    
+                    <button>Sign up</button>
+                </form>
             </div>
+        </section>
 
-        <div class="location-reseach">
-            <form >
-                <div class="location">
-                    <span class="fa-solid fa-location-dot"></span>
-                    <input type="text" placeholder="Location">
-                </div>
-                <div class="type">
-                    <span class="fa-solid fa-house"></span>
-                    <input type="text" placeholder="Type">
-                </div>
-                <div class="price">
-                    <span class="fa-solid fa-circle-dollar-to-slot"></span>
-                    <input type="text" placeholder="Price Range">
-                </div>
-                
-                <button>Sign up</button>
-            </form>
-        </div>
-    </section>
-
-    <!-- add main section -->
-     <main>
         <!-- add the hero-section -->
          <section class="hero-section">
                 <div class="image-container">
@@ -84,7 +86,7 @@
                 </div>
                 <div class="content">
                     <h2>We Help You To Find Your Dream Home</h2>
-                    <p>From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality</p>
+                    <p class="ourvalue">From cozy cottages to luxurious estates, our dedicated team guides you through every step of the journey, ensuring your dream home becomes a reality</p>
                     <div class="stats">
                         <div class="stat1">
                             <h2>8K+</h2>
@@ -136,13 +138,13 @@
                 </div>
         </section>
 
-        <!-- Our Popular Residences -->
+        <!-- add Popular section -->
         <section class="popular">
             <div class="section-header">
                 <h2>Our Popular Residences</h2>
             </div>
             <div class="section-container">
-                <!-- residence-card 1 -->
+                <!-- add residence-card-1 -->
                 <div class="residence-card">
                     <figure>
                         <img srcset="Images/house-1/house-1-320x.jpg 320w,
@@ -154,10 +156,10 @@
                     </figure>
 
                     <div class="residence-info">
-                            <h3><i class="fa-solid fa-location-dot"></i>San Francisco, California</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i>  San Francisco, California</h3>
                         <div class="residence-stats">
-                                <p><i class="fa-light fa-bed-front"></i>4 Rooms</p>
-                                <p><i class="fa-thin fa-tape"></i>3,500 sq ft</p>
+                                <p><i class="fa-solid fa-bed"></i>   4 Rooms</p>
+                                <p><i class="fa-solid fa-tape"></i>   3,500 sq ft</p>
                         </div>
                         <div class="residence-action">
                             <p>$2,500,000</p>
@@ -165,7 +167,7 @@
                          </div>
                     </div>
                 </div>
-                 <!-- residence-card 2 -->
+                 <!-- add residence-card-2 -->
                 <div class="residence-card">
                     <figure>
                     <img srcset="Images/house-2/house-2-320x.jpg 320w,
@@ -177,10 +179,10 @@
                     </figure>
 
                     <div class="residence-info">
-                            <h3><i class="fa-solid fa-location-dot"></i>Beverly Hills, California</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i>  Beverly Hills, California</h3>
                         <div class="residence-stats">
-                                <p><i class="fa-light fa-bed-front"></i>3 Rooms</p>
-                                <p><i class="fa-thin fa-tape"></i>1,500 sq ft</p>
+                                <p><i class="fa-solid fa-bed"></i>   3 Rooms</p>
+                                <p><i class="fa-solid fa-tape"></i>   1,500 sq ft</p>
                         </div>
                         <div class="residence-action">
                             <p>$850,000</p>
@@ -189,7 +191,7 @@
                     </div>
                 </div>
     
-                 <!-- residence-card 3 -->
+                 <!-- add residence-card-3 -->
                 <div class="residence-card">
                     <figure>
                     <img srcset="Images/house-3/house-3-320x.jpg 320w,
@@ -201,10 +203,10 @@
                     </figure>
 
                     <div class="residence-info">
-                            <h3><i class="fa-solid fa-location-dot"></i>Palo Alto, California</h3>
+                            <h3><i class="fa-solid fa-location-dot"></i>  Palo Alto, California</h3>
                         <div class="residence-stats">
-                                <p><i class="fa-light fa-bed-front"></i>6 Rooms</p>
-                                <p><i class="fa-thin fa-tape"></i>4,000 sq ft</p>
+                                <p><i class="fa-solid fa-bed"></i>   6 Rooms</p>
+                                <p><i class="fa-solid fa-tape"></i>   4,000 sq ft</p>
                         </div>
                         <div class="residence-action">
                             <p>$3,700,000</p>
@@ -215,13 +217,13 @@
             </div>
         </section>
 
-        <!-- What People Say About Dwello -->
-        <section class="feedabck">
+        <!-- add feedback section -->
+        <section class="feedback">
                 <h2>What People Say About Dwello</h2>
                 
                 <div class="feedback-container">
-                    <!-- What Sarah Ngugen Says-->
-                    <div class="feedabck-card">
+                    <!-- add What Sarah Ngugen Says-->
+                    <div class="feedback-card">
                         <img srcset="Images/room-1/room-1-320x.jpg 320w,
                                      Images/room-1/room-1-640x.jpg 640w,"
                              sizes="(max-width: 320px) 320px,
@@ -230,19 +232,17 @@
                              alt="Sarah Ngugen">
                         <div class="profile">
                             <img src="Images/SarahNgugen.jpg" alt="Sarah Ngugen">
-                            <div>
                                 <h3>Sarah Ngugen</h3>
-                                <p>San Francisco</p>
-                            </div>
-                            <p class="star"><i class="fa-solid fa-star"></i>5.0</p>
+                                <p class="person">San Francisco</p>
+                                <p class="star"><i class="fa-solid fa-star"></i> 5.0</p>
                         </div>
                         <p class="review">Dwello truly cares about their clients. They listened to my needs and preferences and helped me find the perfect home in the Bay Area. Their professionalism and attention to detail are unmatched.</p>
                     </div>
                 
 
-                    <!-- What Michael Rodriguez Says-->
-                    <div class="feedabck-card">
-                        <img src=srcset="Images/room-2/room-2-320x.jpg 320w,
+                    <!-- add What Michael Rodriguez Says-->
+                    <div class="feedback-card">
+                        <img srcset="Images/room-2/room-2-320x.jpg 320w,
                                      Images/room-2/room-2-640x.jpg 640w,"
                              sizes="(max-width: 320px) 320px,
                                     (max-width: 640px) 640px,"
@@ -250,17 +250,15 @@
                              alt="Michael">
                         <div class="profile">
                             <img src="Images/Michael.jpg" alt="Michael Rodriguez">
-                            <div>
                                 <h3>Michael Rodriguez</h3>
-                                <p>San Diego</p>
-                            </div>                            
-                            <p class="star"><i class="fa-solid fa-star"></i>4.5</p>
+                                <p class="person">San Diego</p>                         
+                                <p class="star"><i class="fa-solid fa-star"></i> 4.5</p>
                         </div>
-                            <p>I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!</p>
+                            <p class="review">I had a fantastic experience working with Dwello. Their expertise and personalized service exceeded my expectations. I found my dream home quickly and smoothly. Highly recommended!</p>
                     </div>
 
-                    <!-- What Emily Johnson Says-->
-                    <div class="feedabck-card">
+                    <!-- add What Emily Johnson Says-->
+                    <div class="feedback-card">
                         <img srcset="Images/room-3/room-3-320x.jpg 320w,
                                      Images/room-3/room-3-640x.jpg 640w,"
                              sizes="(max-width: 320px) 320px,
@@ -269,13 +267,11 @@
                              alt="Emily">
                         <div class="profile">
                             <img src="Images/Emily.jpg" alt="Emily Johnson">
-                            <div>
                                 <h3>Emily Johnson</h3>
-                                <p>Los Angeles</p>
-                            </div>                          
-                            <p class="star"><i class="fa-solid fa-star"></i>5.0</p>                           
+                                <p class="person">Los Angeles</p>                        
+                                <p class="star"><i class="fa-solid fa-star"></i> 5.0</p>                           
                         </div>
-                        <p>Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!</p>
+                        <p class="review">Dwello made my dream of owning a home a reality! Their team provided exceptional support and guided me through every step of the process. I couldn't be happier with my new home!</p>
                     </div>
                 </div>
 
@@ -309,10 +305,10 @@
                     <button type="submit">Submit</button>
                 </div>
         </section>  
-        </main>
+    </main>
     
     <!-- add the footer -->
-    <footer>
+    <footer class="site-footer" role="contentinfo">
         <div class="footer-container">
             <!-- add the slogan -->
                 <div class="footer-logo">
