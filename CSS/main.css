@@ -634,10 +634,34 @@ nav{
         column-gap: 3rem;
     }
     
-    /* style the contact form */
+    /* style the about page */
+    .about-me{
+        display: flex;
+        flex-direction: row;
+        align-items:flex-start;
+        column-gap: 5rem;
+        margin: 1rem 3rem;
+    }
+    .about-me img{
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .about-me .content{
+        padding: 2rem;
+        margin: 1rem;
+    }
+    .about-me .content h2{
+        size:3rem;
+    }
+    .about-me .content button{
+        width: 8rem;
+    }
+
+    /* style the contact page's form */
     #about-main-content form{
         margin: 2rem;
     }
+
 
 }
 
