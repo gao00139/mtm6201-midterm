@@ -244,7 +244,7 @@ header {
     text-align:center;
 }
 .popular img{
-    margin: 0 1rem;
+    margin: 1rem 1rem;
     border-radius: 10px; 
     max-width: 640px;
     width: 100%;
@@ -576,14 +576,14 @@ nav{
         text-align: left;
     }
     .popular img{
-        margin: 0 1rem;
+        margin: 1rem 1rem;
         border-radius: 0px; 
-        max-width: 640px;
+        width: 100%;
     }
     .residence-stats{
         display: flex;
-        justify-content: space-between;
-        margin: 0 2.2rem;
+        justify-content: space-evenly;
+        /* margin: 0 2.2rem; */
     }
     .residence-action{
         display: flex;
@@ -592,6 +592,7 @@ nav{
     }
     .residence-action button{
         margin: 1rem 2rem;
+        width: 8rem;
     }
     .residence-action p{
         margin: 1rem 1rem;
